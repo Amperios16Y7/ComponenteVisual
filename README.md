@@ -1,7 +1,7 @@
 # ComponenteVisual
 
-##Descripción
-CsvDataTable es un componente visual incluido en el paquete componente diseñado para cargar y visualizar archivos CSV dentro de una tabla interactiva con funcionalidades avanzadas como:
+Descripción del componente visual:
+El panel para mostrar datos en tabla (CsvDataTable) es un componente visual incluido en el paquete componente diseñado para cargar y visualizar archivos CSV dentro de una tabla interactiva con funcionalidades avanzadas como:
 -  Carga de archivos CSV desde el sistema de archivos.
 -  Visualización con paginación configurable.
 -  Búsqueda exacta por palabra clave.
@@ -11,9 +11,9 @@ CsvDataTable es un componente visual incluido en el paquete componente diseñado
 
 Es ideal para mostrar y explorar grandes conjuntos de datos tabulares en aplicaciones Java Swing.
 
-Métodos y propiedades más relevantes:
+# Métodos y propiedades más relevantes:
 
-Carga de CSV: Utiliza "JFilechooser" para seleccionar archivos ".csv" del sistema local.
+- Carga de CSV: Utiliza "JFilechooser" para seleccionar archivos ".csv" del sistema local.
 private void cargarArchivoCSV(File file) {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             List<String[]> filas = new ArrayList<>();
@@ -33,7 +33,7 @@ private void cargarArchivoCSV(File file) {
         }
     }
 
-Paginación: Opciones predefinidas (5, 10, 15, 20) o personalizada desde propiedades. 
+- Paginación: Opciones predefinidas (5, 10, 15, 20) o personalizada desde propiedades. 
 private void calcularFilasPorPagina(){
         switch(opcionFilasPorPagina){
             case "5": filasPorPagina = 5; break;
@@ -45,7 +45,7 @@ private void calcularFilasPorPagina(){
         }
     }
 
-Ordenamiento: Ciclo: ascendente, descendente, original para de nuevo ser ascendente... 
+- Ordenamiento: Ciclo: ascendente, descendente, original para de nuevo ser ascendente... 
 private void ordenarPorColumna(int indiceColumna){
         int estado = ordenarEstados.getOrDefault(indiceColumna, 0);
         Comparator<String[]> comparador = Comparator.comparing(row -> row[indiceColumna]);
@@ -59,8 +59,40 @@ private void ordenarPorColumna(int indiceColumna){
         actualizarPaginaTabla();
     }
 
+# Instrucciones de uso
+1. Agregar el componente: Incluye la clase "CsvDataTable" en tu proyecto dentro del paquete "componente".
 
-## Autores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+2. Uso en NetBeans:
+   - Registra el componente como Bean si deseas usarlo visualmente.
+   - Establece las propiedades desde el panel de propiedades (por ejemplo, modoBusqueda, opcionFilasPorPagina, etc.).
+3. Cargar archivo CSV:
+   - Ejecuta la aplicación y pulsa el botón "Cargar CSV".
+   - Selecciona un archivo .csv desde el explorador del sistema.
+4. Buscar datos:
+   - Escribe una palabra exacta en el campo de búsqueda.
+   - Pulsa "Buscar" para filtrar filas que coincidan con ese valor.
+5. Restablecer datos:
+   - Pulsa el botón "Restablecer" para volver a mostrar todos los datos cargados originalmente.
+6. Ordenar por columnas:
+   - Haz clic sobre el encabezado de cualquier columna para alternar entre orden ascendente, descendente y original.
+
+
+# Autores
 
 - Jarquín Rivera Orlando Miguel
 - Pérez Ríos Yael Amir
