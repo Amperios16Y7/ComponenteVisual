@@ -45,7 +45,7 @@ private void calcularFilasPorPagina(){
         }
     }
 
-Ordenamiento: Ciclo: ascendente → descendente → original → ascendente... 
+Ordenamiento: Ciclo: ascendente, descendente, original para de nuevo ser ascendente... 
 private void ordenarPorColumna(int indiceColumna){
         int estado = ordenarEstados.getOrDefault(indiceColumna, 0);
         Comparator<String[]> comparador = Comparator.comparing(row -> row[indiceColumna]);
