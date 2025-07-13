@@ -62,38 +62,41 @@ private void ordenarPorColumna(int indiceColumna){
 # Instrucciones de uso
 1. Agregar el componente: Incluye la clase "CsvDataTable" en tu proyecto dentro del paquete "componente".
 
-
 ![Una bonita imagen](Instruccion1.png)
 
-
-
-
-
-
-
-
-
-
-
-
-   
 2. Uso en NetBeans:
    - Registra el componente como Bean si deseas usarlo visualmente.
    - Establece las propiedades desde el panel de propiedades (por ejemplo, modoBusqueda, opcionFilasPorPagina, etc.).
+
+![Una bonita imagen](Instruccion2.png)
+     
 3. Cargar archivo CSV:
    - Ejecuta la aplicación y pulsa el botón "Cargar CSV".
    - Selecciona un archivo .csv desde el explorador del sistema.
+
+![Una bonita imagen](Instruccion3.png)
+
 4. Buscar datos:
    - Escribe una palabra exacta en el campo de búsqueda.
    - Pulsa "Buscar" para filtrar filas que coincidan con ese valor.
+   - Esta captura muestra aquellos que tienen un coche de la marca Nissan.
+
+![Una bonita imagen](Instruccion4.png)
+
 5. Restablecer datos:
    - Pulsa el botón "Restablecer" para volver a mostrar todos los datos cargados originalmente.
+   - Se volverá activar la paginación en caso de que el archvio .csv tenga más de 20 filas o personalizado.
+
+![Una bonita imagen](Instruccion5.png)
+
 6. Ordenar por columnas:
    - Haz clic sobre el encabezado de cualquier columna para alternar entre orden ascendente, descendente y original.
+   - En esta captura se visualiza el orden de los nombres en orden alfabético desde la A hasta la Z.
 
+![Una bonita imagen](Instruccion6.png)
 
-# Autores
-
+# Créditos de equipo
+Este proyecto fue realizado por:
 - Jarquín Rivera Orlando Miguel
 - Pérez Ríos Yael Amir
 
