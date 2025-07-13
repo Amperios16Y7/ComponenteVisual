@@ -5,7 +5,7 @@ CsvDataTable es un componente visual incluido en el paquete componente diseñado
 -  Carga de archivos CSV desde el sistema de archivos.
 -  Visualización con paginación configurable.
 -  Búsqueda exacta por palabra clave.
--  Ordenamiento de columnas con 3 estados: ascendente → descendente → original.
+-  Ordenamiento de columnas con 3 estados: ascendente, descendente, original.
 -  Botón "Restablecer" para regresar a la tabla original.
 -  Personalización de fuente, colores y configuración visual desde NetBeans.
 
@@ -65,7 +65,7 @@ private void ordenarPorColumna(int indiceColumna){
 - Jarquín Rivera Orlando Miguel
 - Pérez Ríos Yael Amir
 
-🔧 Proyecto desarrollado por el Equipo 9 como parte de la asignatura Tópicos Avanzados de Programación.
+Proyecto desarrollado por el Equipo 9 como parte de la asignatura Tópicos Avanzados de Programación.
 
 Link del video de demostración de uso del componente:
 https://youtu.be/g2najn-B1jU
