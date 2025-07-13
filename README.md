@@ -63,7 +63,7 @@ private void ordenarPorColumna(int indiceColumna){
 1. Agregar el componente: Incluye la clase "CsvDataTable" en tu proyecto dentro del paquete "componente".
 
 
-
+![Una bonita imagen](Instruccion1.png)
 
 
 
